@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="Reflex Lab helps you explore public social conversations, decode cultural signals and turn traceable evidence into strategic opportunities.">
+<title>Reflex Lab | Cultural intelligence explorer</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a href="/" class="brand" aria-label="Reflex Lab home"><span class="brand-icon"><i></i><i></i><i></i></span><span>REFLEX<span class="accent">LAB</span></span></a>
+    <div class="sidebar-label">WORKSPACE</div>
+    <nav class="menu" aria-label="Workspace">
+      <button class="active" data-tab="overview"><span class="glyph">◫</span>Overview</button>
+      <button data-tab="signals"><span class="glyph">⌁</span>Cultural signals</button>
+      <button data-tab="conversations"><span class="glyph">☷</span>Conversations</button>
+      <button data-tab="opportunities"><span class="glyph">✳</span>Opportunity lab</button>
+      <button data-tab="methodology"><span class="glyph">◎</span>Methodology</button>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="online-dot"></span> PUBLIC-SOURCE PROTOTYPE
+      <p>Evidence first. Interpretation second. Forecasts only when validated.</p>
+      <small>INDEPENDENT PROJECT <span>V0.1</span></small>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div>CULTURE INTELLIGENCE <span>/</span> EXPLORER</div><div class="topright"><span class="pill"><i class="online-dot"></i> RESEARCH MODE</span><span class="avatar">RL</span></div></header>
+    <div class="content">
+      <div class="eyebrow"><span></span> INTRODUCING REFLEX LAB <em>/ 001</em></div>
+      <section class="hero"><div><h1>Find the signal<br><em>in the noise.</em></h1><p>Explore public conversations, uncover recurring cultural tensions and turn what people say into defensible strategic opportunities.</p></div>
+        <div class="orbital" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="core">R<b>•</b></div><i class="planet p1"></i><i class="planet p2"></i><i class="planet p3"></i></div>
+      </section>
+      <section class="research" id="research">
+        <div class="research-heading"><div><div class="kicker">NEW EXPLORATION</div><h2>What are we investigating?</h2></div><span>01 / DISCOVER</span></div>
+        <form id="research-form">
+          <label>TOPIC OR KEYWORDS <b>*</b><input name="topic" id="topic" required maxlength="120" placeholder="e.g. cold coffee, streetwear, running clubs"><small>Separate up to three related searches with commas.</small></label>
+          <div class="form-grid">
+            <label>AUDIENCE / INTEREST <small>OPTIONAL</small><input name="audience" maxlength="100" placeholder="e.g. Gen Z in the UK"></label>
+            <label>STRATEGIC QUESTION <small>OPTIONAL</small><input name="objective" maxlength="100" placeholder="e.g. Find community opportunities"></label>
+          </div>
+          <div class="form-grid bottom-grid">
+            <label>EXCLUDE TERMS <small>OPTIONAL</small><input name="exclude" maxlength="140" placeholder="e.g. jobs, recruitment"></label>
+            <fieldset><legend>TIME WINDOW</legend><label><input type="radio" name="days" value="7" checked><span>7 DAYS</span></label><label><input type="radio" name="days" value="30"><span>30 DAYS</span></label></fieldset>
+          </div>
+          <div class="form-actions"><div class="source-note"><strong>◉ PUBLIC SOURCES ONLY</strong><span>No private posts or login bypasses</span></div><div class="actions"><button type="button" class="secondary" id="demo">Try a demo ↗</button><button class="primary" id="scan" type="submit">Scan public conversations ↗</button></div></div>
+        </form>
+      </section>
+      <div id="notice" class="notice hidden" role="status"></div>
+      <section id="results" aria-live="polite">
+        <div class="empty"><div>✳</div><span>THE NEXT SIGNAL IS OUT THERE</span><h2>Curiosity is the starting point.</h2><p>Start with something you want to understand. We'll gather visible evidence, identify patterns, and suggest hypotheses worth testing.</p><div class="suggestions">TRY EXPLORING <button data-topic="running clubs">running clubs ↗</button><button data-topic="cold coffee">cold coffee ↗</button><button data-topic="vintage watches">vintage watches ↗</button><button data-topic="women's football">women's football ↗</button></div></div>
+      </section>
+      <footer>REFLEX LAB <span>•</span> EXPERIMENTAL CULTURAL INTELLIGENCE <span>•</span> NOT A REPRESENTATIVE SOCIAL LISTENING DATASET</footer>
+    </div>
+  </main>
+</div>
+<script defer src="/assets/app.js"></script>
+</body>
+</html>
